@@ -1,0 +1,18 @@
+
+<html>
+<head>
+    <script type="text/javascript" src="valid.js"></script>
+    <link rel="stylesheet" type="text/css" href="gen.css">
+    </head>
+    
+ 
+    
+<body>
+<form method="POST" action="gen.php" enctype="multipart/form-data">
+      <p>Contest Name: <input type="name" name="name" required></p><br />
+    <p>Upload the Json File : <input type ="file" name = "UploadFileName" id="upload" required></p><br /><span id="lblError" style="color: red;"></span>
+    <p>Enter the number of teams: <input type="number"  name="team" id="no" min="0" oninput="validity.valid||(value='');" required></p><br />
+    <input type = "submit" name = "Submit" onclick="return ValidateExtension()"  class="button button2"  value = "Submit">
+</form>
+</body>
+</html>
